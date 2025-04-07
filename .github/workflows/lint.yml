@@ -22,4 +22,3 @@ jobs:
           reporter: github-pr-review  # or github-check for GitHub Checks UI
           filter_mode: nofilter
           fail_level: any
-          flake8_flags: "--exit-zero"

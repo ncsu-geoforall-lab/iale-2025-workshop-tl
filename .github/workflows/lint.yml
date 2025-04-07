@@ -1,9 +1,6 @@
 name: flake8 Lint
 
-on:
-  pull_request:
-    paths:
-      - '**.py'
+on: [push, pull_request]
 
 jobs:
   flake8-lint:
@@ -21,7 +18,7 @@ jobs:
       # Install flake8 extensions (this step is not required. Default is "None").
       - run: pip install flake8-docstrings flake8-simplify flake8-unused-arguments flake8-quotes
       - name: flake8 Lint
-        uses: reviewdog/action-flake8@b65981e158319f08cb7d0132f28bc0081e110adc # v3.15.2
+        uses: reviewdog/action-flake8@v3 # v3.15.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review  # or github-check for GitHub Checks UI

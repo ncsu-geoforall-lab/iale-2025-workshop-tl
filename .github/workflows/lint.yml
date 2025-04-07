@@ -23,5 +23,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           reporter: github-pr-review  # or github-check for GitHub Checks UI
           level: info
-          filter_mode: file
+          flake8_flags: "--isolated ."
+          filter_mode: nofilter
           fail_level: any

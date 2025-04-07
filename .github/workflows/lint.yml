@@ -24,3 +24,4 @@ jobs:
           reporter: github-pr-review  # or github-check for GitHub Checks UI
           level: info
           filter_mode: file
+          fail_level: any

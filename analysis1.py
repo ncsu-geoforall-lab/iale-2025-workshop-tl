@@ -1,7 +1,6 @@
 import grass.script as gs
 
-def get_
-coordinates(points):
+def get_coordinates(points):
     """Function to get coordinate pairs from a vector point layer.
     Do not modify."""
     data = gs.read_command("v.out.ascii", input=points, separator="comma").splitlines()

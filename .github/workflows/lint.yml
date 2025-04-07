@@ -17,6 +17,8 @@ jobs:
       - run: pip install flake8
       # Install flake8 extensions (this step is not required. Default is "None").
       - run: pip install flake8-docstrings flake8-simplify flake8-unused-arguments flake8-quotes
+      - name: Debug: run flake8 manually
+        run: flake8 .
       - name: flake8 Lint
         uses: reviewdog/action-flake8@v3 # v3.15.2
         with:

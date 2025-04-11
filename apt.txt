@@ -32,6 +32,7 @@ make
 netcdf-bin
 p7zip
 proj-bin
+python3-gdal
 sqlite3
 unixodbc-dev
 xvfb

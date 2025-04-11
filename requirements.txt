@@ -7,4 +7,3 @@ ply
 PyVirtualDisplay
 seaborn
 tqdm
-gdal

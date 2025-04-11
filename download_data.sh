@@ -1,0 +1,3 @@
+wget https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/19/IMG/ned19_n35x00_w078x00_nc_statewide_2003.zip
+unzip ned19_n35x00_w078x00_nc_statewide_2003.zip
+rm ned19_n35x00_w078x00_nc_statewide_2003.zip

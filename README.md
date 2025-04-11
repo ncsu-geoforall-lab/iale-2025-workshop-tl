@@ -26,6 +26,9 @@ Presenter(s): [Caitlin Haedrich](https://chaedri.github.io/),
 2. Select _File_ > _Open notebook_ > _GitHub_ notebook > (ignore authorization window if it appears) > paste [the notebook url](workshop.ipynb) to the search field > press _Enter_
 3. Execute the notebook cell by cell.
 
+Aletrnatively, try running the notebook through mybinder.org:  
+ [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncsu-geoforall-lab/iale-2025-workshop-tl/main?urlpath=%2Fdoc%2Ftree%2Fbinder_workshop.ipynb)
+
 #### 1.3 Developing your own models
 
 In this part you will develop simple geospatial models that will be run on Tangible Landscape in the second part of the workshop.

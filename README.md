@@ -24,11 +24,8 @@ Presenter(s): [Caitlin Haedrich](https://chaedri.github.io/),
 
 #### 1.2 Hands-on exercise
 
-1. Open [Google Colab](https://colab.research.google.com/)
-2. Select _File_ > _Open notebook_ > _GitHub_ notebook > (ignore authorization window if it appears) > paste [the notebook url](workshop.ipynb) to the search field > press _Enter_
-3. Execute the notebook cell by cell.
-
-[![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+1. Open the workshop.ipynb in Google Colab and execute the cells one by one:
+[![Open_in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ncsu-geoforall-lab/iale-2025-workshop-tl/blob/main/workshop.ipynb)
 
 Aletrnatively, try running the notebook through mybinder.org:  
  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncsu-geoforall-lab/iale-2025-workshop-tl/main?urlpath=%2Fdoc%2Ftree%2Fbinder_workshop.ipynb)

@@ -122,4 +122,4 @@ def process_directory(input_dir, output_file):
 
 
 if __name__ == "__main__":
-    process_directory(".", "analyses.py")
+    process_directory(".", "participant_analyses.py")

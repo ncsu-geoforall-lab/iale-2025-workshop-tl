@@ -31,10 +31,11 @@ def run_change_detection(scanned_elev, env, **kwargs):
 
 
 class GRASSCodeTransformer(ast.NodeTransformer):
-    def __init__(self):
+    def __init__(self, file):
         self.env_param = ast.arg(arg="env", annotation=None)
         self.kwargs_param = ast.arg(arg="kwargs", annotation=None)
-        self.rename_prefix = "run_"
+        self.rename_prefix = "_run_"
+        self.rename_suffix = f"_{file[:-3]}"
 
     def visit_Name(self, node):
         if node.id == "elevation":
@@ -45,7 +46,7 @@ class GRASSCodeTransformer(ast.NodeTransformer):
     def visit_FunctionDef(self, node):
 
         if node.name != "get_coordinates":
-            node.name = self.rename_prefix + node.name
+            node.name = self.rename_prefix + node.name + self.rename_suffix
 
         # Rename parameter 'elevation' to 'scanned_elev'
         for arg in node.args.args:
@@ -88,9 +89,9 @@ class GRASSCodeTransformer(ast.NodeTransformer):
         return self.generic_visit(node)
 
 
-def transform_code(source_code):
+def transform_code(source_code, file):
     tree = ast.parse(source_code)
-    transformer = GRASSCodeTransformer()
+    transformer = GRASSCodeTransformer(file)
     transformed_tree = transformer.visit(tree)
     functions = []
     for node in transformed_tree.body:
@@ -103,7 +104,7 @@ def transform_code(source_code):
 
 def process_directory(input_dir, output_file):
     all_functions = []
-    blacklist = ["postprocess.py", "analyses.py"]
+    blacklist = ["postprocess.py", "participant_analyses.py"]
 
     for root, _, files in os.walk(input_dir):
         for file in files:
@@ -111,7 +112,7 @@ def process_directory(input_dir, output_file):
                 file_path = os.path.join(root, file)
                 with open(file_path, "r") as f:
                     source = f.read()
-                    transformed_function = transform_code(source)
+                    transformed_function = transform_code(source, file)
                     if transformed_function:
                         all_functions.extend(transformed_function)
 

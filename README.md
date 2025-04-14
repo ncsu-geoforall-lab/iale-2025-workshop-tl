@@ -3,7 +3,9 @@ This is a repository for materials and Tangible Landscape activities for IALE-NA
 
 
 ## Overview
-In this workshop, participants will be introduced to GRASS, a powerful open-source geospatial processing engine, and explore how it can be used to develop models for environmental applications. Participants will learn to build Python-based workflows for topics such as hydrology, flood modeling, and trajectory routing. These workflows will be implemented in computational notebooks, highlighting the capabilities of GRASS GIS for flexible and scalable analysis. In the second half of the workshop, we will deploy these models into Tangible Landscape, an interactive, augmented reality environment that facilitates participatory science by integrating a physical landscape with real-time geospatial simulations. The Tangible Landscape environment allows users to interact with, for example, an overland flow model by carving sand with their hands and viewing the resulting water flow projected back onto the sand. Participants will gain hands-on experience with GRASS tools and its Python API while learning essential GitHub workflows for collaborative development. This workshop is ideal for those interested in applying geospatial tools to real-world environmental challenges or in fostering community engagement through participatory science.
+In this workshop, participants will be introduced to GRASS, a powerful open-source geospatial processing engine, and explore how it can be used to develop models for environmental applications. Participants will learn to build Python-based workflows for topics such as hydrology, flood modeling, and trajectory routing. These workflows will be implemented in computational notebooks, highlighting the capabilities of GRASS GIS for flexible and scalable analysis.
+
+In the second half of the workshop, we will deploy these models into [Tangible Landscape](https://tangible-landscape.github.io/), an interactive, augmented reality environment that facilitates participatory science by integrating a physical landscape with real-time geospatial simulations. The Tangible Landscape environment allows users to interact with, for example, an overland flow model by carving sand with their hands and viewing the resulting water flow projected back onto the sand. Participants will gain hands-on experience with GRASS tools and its Python API while learning essential GitHub workflows for collaborative development. This workshop is ideal for those interested in applying geospatial tools to real-world environmental challenges or in fostering community engagement through participatory science.
 
 
 Presenter(s): [Caitlin Haedrich](https://chaedri.github.io/), 
@@ -26,12 +28,14 @@ Presenter(s): [Caitlin Haedrich](https://chaedri.github.io/),
 2. Select _File_ > _Open notebook_ > _GitHub_ notebook > (ignore authorization window if it appears) > paste [the notebook url](workshop.ipynb) to the search field > press _Enter_
 3. Execute the notebook cell by cell.
 
+[![Open Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+
 Aletrnatively, try running the notebook through mybinder.org:  
  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ncsu-geoforall-lab/iale-2025-workshop-tl/main?urlpath=%2Fdoc%2Ftree%2Fbinder_workshop.ipynb)
 
 #### 1.3 Developing your own models
 
-In this part you will develop simple geospatial models that will be run on Tangible Landscape in the second part of the workshop.
+In this part, you will develop simple geospatial models that will be run on Tangible Landscape in the second part of the workshop.
 
 Use the suggested tasks, together with [GRASS documentation](https://grass.osgeo.org/grass-devel/manuals/index.html) and provided template in the notebook
 to (1) develop the models, (2) test them, and (3) visualize the results.
@@ -45,15 +49,11 @@ _[15 min break]_
 
 We will show different applications of Tangible Landscape and explain how to develop an interactive model in Tangible Landscape.
 
-#### 2.2 GitHub workflow
+#### 2.2 GitHub Introduction and Contributing a model through GitHub
 
-In this part we will explain why it's useful to understand GitHub contributing workflow and how it works.
+In this part, we will explain why it's useful to understand GitHub contributing workflow and how Git and GitHub works. Then, we will fork this repository and make a pull request containing the script we developed in 1.3.
 
-#### 2.3 Contributing a model through GitHub
-
-We will use GitHub to fork this repository and make a pull request containing the script we developed earlier.
-
-#### 2.4 Running contributed models in Tangible Landscape
+#### 2.3 Running contributed models in Tangible Landscape
 
 We will plug in the participant contributed models in Tangible Landscape and see how they work with different parameters and modified elevation inputs.
 

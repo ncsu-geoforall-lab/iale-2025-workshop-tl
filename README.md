@@ -24,7 +24,8 @@ Presenter(s): [Caitlin Haedrich](https://chaedri.github.io/),
 
 #### 1.2 Hands-on exercise
 
-1. Open the workshop.ipynb in Google Colab and execute the cells one by one:
+Open the workshop.ipynb in Google Colab and execute the cells one by one:
+   
 [![Open_in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ncsu-geoforall-lab/iale-2025-workshop-tl/blob/main/workshop.ipynb)
 
 Aletrnatively, try running the notebook through mybinder.org:  

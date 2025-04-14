@@ -1,6 +1,5 @@
 import ast
-
-# import astor
+import astor
 import os
 
 header = """
@@ -24,7 +23,7 @@ def run_change_detection(scanned_elev, env, **kwargs):
                               cells_threshold=[7, 100],
                               add=True,
                               max_detected=3,
-                              debug=False,
+                              debug=True,
                               env=env,
                               )
 
@@ -98,7 +97,7 @@ def transform_code(source_code):
         if isinstance(node, ast.FunctionDef):
             if node.name == "get_coordinates":
                 continue
-            functions.append(ast.unparse(node).strip())
+            functions.append(astor.to_source(node).strip())
     return functions
 
 

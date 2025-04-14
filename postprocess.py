@@ -98,7 +98,7 @@ def transform_code(source_code, file):
         if isinstance(node, ast.FunctionDef):
             if node.name == "get_coordinates":
                 continue
-            functions.append(astor.to_source(node).strip())
+            functions.append(astor.to_source(node, pretty_source=lambda x: "".join(x)).strip())
     return functions
 
 
